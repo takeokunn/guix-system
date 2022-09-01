@@ -1,6 +1,5 @@
 ;; # -*- mode:emacs-lisp; -*-
 
-(require 'exwm)
 (require 'exwm-config)
 (require 'exwm-systemtray)
 

@@ -14,6 +14,6 @@ export LSP_USE_PLISTS="true"
 
 export GPG_TTY=$(tty)
 
-if [ -z "$DISPLAY" -a "$(tty)" = '/dev/tty5' ]; then
-    exec /usr/bin/startx ~/.xinitrc.exwm >/tmp/startx.log 2>&1
-fi
+# if [ -z "$DISPLAY" -a "$(tty)" = '/dev/tty5' ]; then
+#     exec /usr/bin/startx ~/.xinitrc.exwm >/tmp/startx.log 2>&1
+# fi
