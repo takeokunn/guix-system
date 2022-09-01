@@ -14,4 +14,7 @@
           "33f86a4b48205c0dc19d7c036c85393f0766f806"
           (openpgp-fingerprint
            "736A C00E 1254 378B A982 7AF6 9DBE 8265 81B6 4490"))))
+       (channel
+        (name 'takeguix)
+        (url "https://github.com/takeokunn/takeguix"))
        %default-channels)
