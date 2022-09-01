@@ -1,0 +1,16 @@
+* guix-system
+** install
+*** dotfiles
+#+begin_src shell
+  $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/.exwm /home/take/.exwm
+  $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/.profile /home/take/.profile
+#+end_src
+*** system
+#+begin_src shell
+  $ sudo ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/system/config.scm /etc/config.scm
+#+end_src
+*** config
+#+begin_src shell
+  $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/config/manifest.scm /home/take/.config/guix/manifest.scm
+  $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/config/channels.scm /home/take/.config/guix/channels.scm
+#+end_src

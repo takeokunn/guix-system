@@ -1,0 +1,11 @@
+;; # -*- mode:emacs-lisp; -*-
+
+(require 'exwm)
+(require 'exwm-config)
+(require 'exwm-systemtray)
+
+(display-time-mode)
+(display-battery-mode)
+
+(exwm-systemtray-enable)
+(exwm-config-example)
