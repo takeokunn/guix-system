@@ -32,7 +32,7 @@
                                 %base-user-accounts))
                   (packages
                    (append
-                    (list (specification->package "emacs-native-comp")
+                    (list (specification->package "emacs")
                           (specification->package "emacs-exwm")
                           (specification->package "emacs-desktop-environment")
                           (specification->package "nss-certs"))
@@ -73,7 +73,7 @@
                   (mapped-devices
                    (list (mapped-device
                           (source
-                           (uuid "1134a6d9-5825-41e5-8e69-581c00e119da"))
+                           (uuid "6592d04a-e5bd-4dfe-982d-6c438496ef85"))
                           (target "cryptroot")
                           (type luks-device-mapping))))
                   (file-systems
