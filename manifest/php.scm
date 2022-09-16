@@ -38,14 +38,12 @@
   (package
    (name "php-81")
    (version "8.1.10")
-   (home-page "https://www.php.net/")
    (source (origin
             (method url-fetch)
-            (uri (string-append home-page "distributions/"
-                                "php-" version ".tar.xz"))
+            (uri (string-append "https://github.com/php/php-src/archive/refs/tags/php-" version ".tar.gz"))
             (sha256
              (base32
-              "90e7120c77ee83630e6ac928d23bc6396603d62d83a3cf5df8a450d2e3070162"))
+              "f692b276666273b2de6b1df875c0d0c6272813550fdc975db0de5060c0ebb7a6"))
             (modules '((guix build utils)))))
    (build-system gnu-build-system)
    (arguments
