@@ -10,7 +10,9 @@
                      networking
                      ssh
                      xorg
-                     pm)
+                     docker
+                     pm
+                     virtualization)
 
 (operating-system (kernel linux)
                   (initrd microcode-initrd)
@@ -28,7 +30,7 @@
                                  (comment "take")
                                  (group "users")
                                  (home-directory "/home/take")
-                                 (supplementary-groups '("wheel" "netdev" "kvm" "tty" "input" "lp" "audio" "video")))
+                                 (supplementary-groups '("wheel" "netdev" "kvm" "tty" "input" "lp" "audio" "video" "libvirt" "docker")))
                                 %base-user-accounts))
                   (packages
                    (append
@@ -40,6 +42,10 @@
                   (services
                    (append
                     (list
+                     (service docker-service-type)
+                     (service libvirt-service-type
+                              (libvirt-configuration
+                               (unix-sock-group "libvirt")))
                      (service tor-service-type)
                      (service tlp-service-type
                               (tlp-configuration
