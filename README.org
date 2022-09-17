@@ -3,7 +3,7 @@
 *** dotfiles
 #+begin_src shell
   $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/.exwm /home/take/.exwm
-  $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/.profile /home/take/.profile
+  $ ln -sf /home/take/.ghq/github.com/takeokunn/guix-system/.bashrc /home/take/.bashrc
 #+end_src
 *** system
 #+begin_src shell

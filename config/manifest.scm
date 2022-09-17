@@ -14,6 +14,7 @@
    "cmake"
    "gcc"
    "gcc-toolchain"
+   "glibc"
    "libiconv"
    "make"
    "oniguruma"
@@ -57,6 +58,7 @@
    ;; for language
    "go"
    "node-latest"
+   "sbcl"
    "ruby"
    "rust"
    "php-latest"
@@ -66,6 +68,12 @@
    "font-google-noto"
    "font-gnu-freefont"
    "font-adobe-source-han-sans"
+
+   ;; for nyxt
+   "gst-libav"
+   "gst-plugins-bad"
+   "gst-plugins-good"
+   "gst-plugins-ugly"
 
    ;; for application
    "firefox"
