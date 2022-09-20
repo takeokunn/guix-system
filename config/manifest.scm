@@ -52,8 +52,11 @@
 
    ;; for develop
    "editorconfig-core-c"
-   "docker"
    "mysql"
+
+   ;; for docker
+   "docker"
+   "docker-compose"
 
    ;; for language
    "go"
@@ -72,6 +75,7 @@
    ;; for nyxt
    "gst-libav"
    "gst-plugins-bad"
+   "gst-plugins-base"
    "gst-plugins-good"
    "gst-plugins-ugly"
 
