@@ -19,6 +19,7 @@
    "make"
    "oniguruma"
    "re2c"
+   "texinfo"
    "unzip"
 
    ;; for gpg
@@ -42,6 +43,7 @@
    "pavucontrol"
 
    ;; for utility
+   "cmigemo"
    "curl"
    "direnv"
    "ffmpeg"
@@ -49,6 +51,8 @@
    "jq"
    "nkf"
    "openssh"
+   "pwgen"
+   "wget"
 
    ;; for develop
    "editorconfig-core-c"
@@ -59,18 +63,22 @@
    "docker-compose"
 
    ;; for language
+   "ghc"
    "go"
    "node-latest"
+   "php-latest"
+   "python"
    "sbcl"
    "ruby"
    "rust"
-   "php-latest"
+   "zig"
 
    ;; for font
+   "font-adobe-source-han-sans"
+   "font-cica"
    "font-dejavu"
    "font-google-noto"
    "font-gnu-freefont"
-   "font-adobe-source-han-sans"
 
    ;; for nyxt
    "gst-libav"

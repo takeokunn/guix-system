@@ -18,4 +18,8 @@
        (name 'takeguix)
        ;; (url "https://github.com/takeokunn/takeguix")
        (url "file:///home/take/ghq/github.com/takeokunn/takeguix")
+       (branch "main"))
+      (channel
+       (name 'guix-jp)
+       (url "https://gitlab.com/guix-jp/channel")
        (branch "main")))

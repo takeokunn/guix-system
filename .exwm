@@ -8,3 +8,5 @@
 
 (exwm-systemtray-enable)
 (exwm-config-example)
+
+(exwm-input-set-key (kbd "s-m") #'exwm-layout-toggle-fullscreen)
