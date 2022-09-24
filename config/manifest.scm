@@ -16,6 +16,7 @@
    "gcc-toolchain"
    "glibc"
    "libiconv"
+   "llvm"
    "make"
    "oniguruma"
    "re2c"
@@ -48,6 +49,7 @@
    "direnv"
    "ffmpeg"
    "graphviz"
+   "htop"
    "jq"
    "nkf"
    "openssh"
@@ -63,9 +65,16 @@
    "docker-compose"
 
    ;; for language
+   "clojure"
+   "julia"
+   "gauche"
    "ghc"
    "go"
+   "idris"
+   "nim"
    "node-latest"
+   "ocaml"
+   "perl"
    "php-latest"
    "python"
    "sbcl"
@@ -74,6 +83,7 @@
    "zig"
 
    ;; for font
+   "font-symbola"
    "font-adobe-source-han-sans"
    "font-cica"
    "font-dejavu"

@@ -22,4 +22,7 @@
       (channel
        (name 'guix-jp)
        (url "https://gitlab.com/guix-jp/channel")
-       (branch "main")))
+       (branch "main"))
+      (channel
+       (name 'alezost-channel)
+       (url "https://gitlab.com/alezost-config/guix.git")))

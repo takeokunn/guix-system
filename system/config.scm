@@ -12,6 +12,7 @@
                      xorg
                      docker
                      pm
+                     sound
                      virtualization)
 
 (operating-system (kernel linux)
@@ -37,7 +38,9 @@
                     (list (specification->package "emacs")
                           (specification->package "emacs-exwm")
                           (specification->package "emacs-desktop-environment")
-                          (specification->package "nss-certs"))
+                          (specification->package "nss-certs")
+                          (specification->package "alsa-utils")
+                          (specification->package "pulseaudio"))
                     %base-packages))
                   (services
                    (append
@@ -50,23 +53,23 @@
                      (service tlp-service-type
                               (tlp-configuration
                                (cpu-scaling-governor-on-ac (list "performance"))
-                               (cpu-scaling-governor-on-bat (list "performance"))
+                               (cpu-scaling-governor-on-bat (list "disabled")) ;; disabled or performance
                                (cpu-boost-on-ac? #t)
-                               (cpu-boost-on-bat? #t)
+                               (cpu-boost-on-bat? #f) ;; #f or #t
                                (sched-powersave-on-ac? #f)
-                               (sched-powersave-on-bat? #f)
+                               (sched-powersave-on-bat? #t) ;; #f or #t
                                (energy-perf-policy-on-ac "performance")
-                               (energy-perf-policy-on-bat "performance")
+                               (energy-perf-policy-on-bat "disabled") ;; disabled or performance
                                (sata-linkpwr-on-ac "max_erformance")
-                               (sata-linkpwr-on-bat "max_erformance")
+                               (sata-linkpwr-on-bat "min_erformance") ;; max_erformance or min_erformance
                                (pcie-aspm-on-ac "performance")
-                               (pcie-aspm-on-bat "performance")
+                               (pcie-aspm-on-bat "powersavef") ;; performance or powersave
                                (wifi-pwr-on-ac? #f)
-                               (wifi-pwr-on-bat? #f)
+                               (wifi-pwr-on-bat? #t) ;; #f or #t
                                (sound-power-save-on-ac 0)
-                               (sound-power-save-on-bat 0)
+                               (sound-power-save-on-bat 1) ;; 0 or 1
                                (runtime-pm-on-ac "on")
-                               (runtime-pm-on-bat "on")))
+                               (runtime-pm-on-bat "off"))) ;; on or off
                      (set-xorg-configuration
                       (xorg-configuration
                        (keyboard-layout keyboard-layout))))

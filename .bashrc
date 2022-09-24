@@ -46,7 +46,7 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local/bin
 
 # for go
-export GOPATH=$HOME/projects/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # for ruby
