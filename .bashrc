@@ -26,6 +26,8 @@ then
 else
     PS1='\u@\h \w\$ '
 fi
+
+# alias
 alias ls='ls -p --color=auto'
 alias ll='ls -l'
 alias grep='grep --color=auto'
