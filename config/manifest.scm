@@ -22,6 +22,7 @@
    "llvm"
    "make"
    "oniguruma"
+   "sqlite"
    "re2c"
    "texinfo"
    "unzip"
@@ -42,7 +43,10 @@
    ;; for keyboard
    "xmodmap"
 
-   ;; for volue
+   ;; for shell
+   "fish"
+
+   ;; for volume
    "bluez-alsa"
    "pavucontrol"
 
@@ -86,7 +90,6 @@
    "zig"
 
    ;; for font
-   "font-symbola"
    "font-adobe-source-han-sans"
    "font-cica"
    "font-dejavu"

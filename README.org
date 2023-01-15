@@ -1,3 +1,6 @@
+#+STARTUP: content
+#+STARTUP: nohideblocks
+
 * guix-system
 ** install
 *** dotfiles
